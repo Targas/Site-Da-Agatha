@@ -1,37 +1,69 @@
 <html>
     <head>
         <title>
-            Animação em botão
+            Site da Agatha
         </title>
 
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
             body {
-                background: url('ceu.png');
+                background: url('bg.jpg');
+                background-size: cover;
+                background-position-y: 100%;
+                font-family: 'Courgette', cursive;
+            }
+            .unicornio {
                 display: flex;
                 justify-content: center;
-                align-items: center;
             }
 
-            button {
-                width: 835px;
-                height: 816px;
-                background: url('goku.png');
-                border: 0;
-                overflow: hidden;
-                text-indent: -9999px;
-                transform: scale(.75);
-                transition: all 1s ease;
+            nav {
+                display: flex;
+                justify-content: center;
             }
 
-            button:hover {
-                transform: scale(.75) translateY(-150px);
+            nav ul li {
+                list-style: none;
+            }
+
+            nav ul li a {
+                background: palevioletred;
+                display: block;
+                margin: 10px;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 20px;
+                transition: background .5s ease;
+            }
+            nav ul li a:hover {
+                background: purple;
             }
         </style>
     </head>
 
     <body>
-        <button>
-            Animar com Mario
-        </button>
+        <div class="unicornio">
+            <img src="unicornio.png">
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="cachorrinho/index.html">
+                        Minha primeira página (cachorrinho)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="goku/index.html">
+                        Goku
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
